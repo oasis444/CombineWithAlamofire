@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var randomUserViewModel = RandomUserViewModel()
+//    @ObservedObject var randomUserViewModel = RandomUserViewModel()
+    @StateObject var randomUserViewModel = RandomUserViewModel()
     
     var body: some View {
         List(randomUserViewModel.randomUsers) { randomUser in
